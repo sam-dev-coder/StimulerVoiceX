@@ -50,7 +50,7 @@ To use TensorRT, we need to follow these steps:
 - Generate a runtime engine from our optimized network object using TensorRT’s engine and runtime, which will compile our model for a specific target device and platform.
 - Perform inference using our runtime engine on our input data using TensorRT’s execution context, which will provide us with the output predictions.
 
-We can find more details and examples on how to use TensorRT in this blog post or this tutorial.
+We can find more details and examples on how to use TensorRT in this [blog post](https://developer.nvidia.com/blog/speeding-up-deep-learning-inference-using-tensorrt-updated) or [this tutorial](https://developer.nvidia.com/blog/speed-up-inference-tensorrt).
 
 ### Triton Inference Server
 Triton Inference Server is a framework for serving multiple models from different frameworks on GPUs or CPUs. Triton Inference Server can help us:
@@ -71,7 +71,7 @@ To use Triton Inference Server, we need to follow these steps:
 - Send inference requests to Triton Inference Server using its client libraries or REST API, specifying the model name, version, input data, and output format.
 - Monitor the performance of Triton Inference Server using its metrics endpoint, which provides information about the status and statistics of our models. We can also use Prometheus and Grafana to collect and visualize the metrics in real time.
 
-We can find more details and examples on how to use Triton Inference Server in this blog post: [Minimizing real-time prediction serving latency in machine learning].
+We can find more details and examples on how to use Triton Inference Server in this blog post: [Minimizing real-time prediction serving latency in machine learning](https://cloud.google.com/architecture/minimizing-predictive-serving-latency-in-machine-learning).
 
 ### TensorFlow Serving
 TensorFlow Serving is a system for serving TensorFlow models in production. TensorFlow Serving can help us:
@@ -91,7 +91,7 @@ To use TensorFlow Serving, we need to follow these steps:
 - Send inference requests to TensorFlow Serving using its REST API or gRPC API, specifying the model name, version, input data, and output format.
 - Monitor the performance of TensorFlow Serving using its APIs or third-party tools.
 
-We can find more details and examples on how to use TensorFlow Serving in this tutorial: [Train and serve a TensorFlow model with TensorFlow Serving].
+We can find more details and examples on how to use TensorFlow Serving in this tutorial: [Train and serve a TensorFlow model with TensorFlow Serving](https://www.tensorflow.org/tfx/tutorials/serving/rest_simple).
 
 ### TensorFlow Core
 TensorFlow Core is the low-level API of TensorFlow that provides direct access to the computational graph and operations. TensorFlow Core can help us:
@@ -111,7 +111,7 @@ To use TensorFlow Core, we need to follow these steps:
 - Optimize the performance of our model using various techniques. We can use tf.graph_util API or tf.compat.v1 API to optimize our graph. We can also use tf.xla.experimental.compile API or tf.config.optimizer.set_jit API to enable XLA compilation. We can also use tf.lite.TFLiteConverter API or tf.quantization.quantize_and_dequantize API to quantize our model.
 - Monitor the performance of our model using various tools. We can use tf.summary API or tf.keras.callbacks.TensorBoard API to log metrics and events for TensorBoard. We can also use tf.profiler.Profiler API or tf.keras.callbacks.ProfilerCallback API to profile our model for Profiler. We can also use tf.debugging.experimental.enable_dump_debug_info API or tf.debugging.experimental.enable_trace_v2 API to dump debug information for Debugger V2 or Trace Viewer.
 
-We can find more details and examples on how to use TensorFlow Core in this guide: [Save and load models | TensorFlow Core].
+We can find more details and examples on how to use TensorFlow Core in this guide: [Save and load models | TensorFlow Core](https://www.tensorflow.org/tutorials/keras/save_and_load).
 
 ### AI Platform
 AI Platform is a managed service that allows us to easily deploy our machine learning models at scale on Google Cloud Platform. AI Platform can help us:
@@ -132,7 +132,7 @@ To use AI Platform, we need to follow these steps:
 - Send prediction requests to AI Platform using its REST API or gRPC API, specifying the model name, version, input data, and output format. We can also use client libraries or SDKs for different languages or platforms.
 - Monitor the performance and health of AI Platform using its Monitoring service, which provides dashboards and alerts for our models.
 
-We can find more details and examples on how to use AI Platform in this blog post: [How-to deploy TensorFlow 2 Models on Cloud AI Platform].
+We can find more details and examples on how to use AI Platform in this blog post: [How-to deploy TensorFlow 2 Models on Cloud AI Platform](https://blog.tensorflow.org/2020/04/how-to-deploy-tensorflow-2-models-on-cloud-ai-platform.html).
 
 ## Deployment Strategy
 Based on the tools that I have introduced above, I will propose a possible deployment strategy for our denoising and speech enhancement system. The strategy is as follows:
