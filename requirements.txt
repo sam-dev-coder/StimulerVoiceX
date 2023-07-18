@@ -1,0 +1,6 @@
+os
+numpy
+tensorflow
+tensorflow_io
+librosa
+json
