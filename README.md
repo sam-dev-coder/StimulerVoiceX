@@ -21,7 +21,7 @@ StimulerVoiceX is a denoising and speech enhancement system that utilizes deep l
 1. Make sure you have the required dependencies installed. You can install them using the following command:
 
    ```
-   pip install tensorflow tensorflow-io librosa
+   python -m pip install -r requirements.txt
    ```
 
 2. Place your clean audio files in the directory specified by `"clean_audio_dir"` in `config.json`. Place your noisy audio files in the directory specified by `"noisy_audio_dir"`.
